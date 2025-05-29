@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="calendar.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Event Calendar</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Family Events</a>
+      <a href="calendar.html">Event Calendar</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Add New Event</h2>
+    <form id="event-form">
+      <input type="text" id="event-title" placeholder="Event Title" required />
+      <input type="date" id="event-date" required />
+      <textarea id="event-note" placeholder="Add a note..."></textarea>
+      <button type="submit">Add Event</button>
+    </form>
+    <h2>All Events</h2>
+    <ul id="calendar-events"></ul>
+  </main>
+  <footer>Made with ❤️ for the Family</footer>
+</body>
+</html>
